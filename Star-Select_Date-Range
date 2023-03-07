@@ -1,0 +1,2 @@
+Select* From "Warehouse"."Schema_Name"."Table_1"
+Where FieldName Between '2021-6-8' and '2021-6-9'
