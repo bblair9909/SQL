@@ -1,0 +1,5 @@
+SELECT Column1, Column2, Column3, COUNT (DISTINCT Column1) AS NewName
+FROM Table.Path
+WHERE ColumnDate >= '2021-6-8' AND Column2 = 'Criteria'
+AND Column IN ('Text','Text')
+GROUP BY 1,2,3,4,5 ORDER BY Column
