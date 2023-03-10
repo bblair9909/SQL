@@ -1,0 +1,8 @@
+SELECT country_info.Country, country_info.Year, hiv_info.new_cases_of_hiv_infection, country_info.unemployment_rate
+	FROM data_el_m5.country_info
+		LEFT JOIN
+        data_el_m5.hiv_info
+        ON country_info.Country = hiv_info.Entity
+        AND country_info.Year = hiv_info.Year
+	WHERE Country = 'North America'
+    ORDER BY Year DESC
